@@ -60,4 +60,16 @@ npm start
 
 ## 검증 상태
 
-2026-11-26 백엔드 Python 파일의 \`compileall\` 검사는 통과했습니다. 저장소에서 자동화 테스트를 확인하지 못했으며 Gemini API 호출, 브라우저 전체 흐름, 배포 환경은 검증하지 않았습니다. 따라서 문법 검사는 핵심 기능의 end-to-end 정상 동작을 보장하지 않습니다.
+2026-11-26 백엔드 Python 파일의 `compileall` 검사는 통과했습니다. 브라우저에서 로컬 연차 기안 시뮬레이션과 LLMOps 대시보드도 확인했습니다. 저장소에서 자동화 테스트를 확인하지 못했으며 유효한 Gemini API를 통한 응답·임베딩, 배포 환경은 검증하지 않았습니다.
+
+## 실행 화면
+
+아래 이미지는 로컬 개발 환경에서 실제 앱을 실행하고 브라우저로 촬영한 화면입니다.
+
+| 화면 | 설명 |
+|---|---|
+| [기본 질의 화면](docs/screenshots/actionable-rag-chat-home.png) | 채팅 에이전트의 초기 화면과 질의 예시 |
+| [연차 기안 시뮬레이션](docs/screenshots/actionable-rag-approval-draft-simulation.png) | 샘플 연차 요청으로 생성한 로컬 시뮬레이션 카드와 규정 출처 |
+| [LLMOps 대시보드](docs/screenshots/actionable-rag-llmops-dashboard.png) | 로컬 시뮬레이션 실행으로 생성된 지표와 감사 로그 |
+
+> 캡처의 신청자·결재자·취업규칙 및 메트릭은 샘플 데이터입니다. 전자결재는 로컬 시뮬레이션이며 실제 그룹웨어에 전송되지 않습니다. 이 캡처에서는 유효한 Gemini API 키를 사용하지 않아 Gemini 응답이나 임베딩 결과를 검증하지 않았습니다.
